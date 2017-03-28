@@ -1,54 +1,57 @@
-# PacketFu
+# PacketFu6
 
-[![Build Status](https://secure.travis-ci.org/packetfu/packetfu.png)](http://travis-ci.org/packetfu/packetfu)
+[![BuildStatus](https://secure.travis-ci.org/decrypto-org/packetfu6.png)](http://travis-ci.org/decrypto-org/packetfu6)
 [![Code Climate](https://codeclimate.com/github/packetfu/packetfu.png)](https://codeclimate.com/github/packetfu/packetfu)
-[![Coverage Status](https://coveralls.io/repos/github/packetfu/packetfu/badge.svg?branch=master)](https://coveralls.io/github/packetfu/packetfu?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/decrypto-org/packetfu6/badge.svg?branch=master)](https://coveralls.io/github/decrypto-org/packetfu6?branch=master)
 
 A library for reading and writing packets to an interface or to a
 libpcap-formatted file.
+This is a temporary hard copy of
+[PacketFu](https://github.com/packetfu/packetfu) library.  
 
-It is maintained [here](https://github.com/packetfu/packetfu).
+It is maintained [here](https://github.com/decrypto-org/packetfu6).
 
 ## Setup
 
 To install the gem, type
 
 ```bash
-gem install packetfu
+gem install packetfu6
 ```
 
 To install from source, type
 
 ```bash
 gem install bundler
-git clone https://github.com/packetfu/packetfu.git
-cd packetfu
+git clone https://github.com/decrypto-org/packetfu6.git
+cd packetfu6
 bundle install
 ```
 
 ## Quick Start
 
-The best way to test your installation is by using [packetfu-shell](https://github.com/packetfu/packetfu/blob/master/examples/packetfu-shell.rb), like so
+The best way to test your installation is by using
+[packetfu-shell](https://github.com/decrypto-org/packetfu6/blob/master/examples/packetfu-shell.rb), like so
 
 ```bash
 $ rvmsudo ruby examples/packetfu-shell.rb
- _______  _______  _______  _        _______ _________ _______
-(  ____ )(  ___  )(  ____ \| \    /\(  ____ \\__   __/(  ____ \|\     /|
-| (    )|| (   ) || (    \/|  \  / /| (    \/   ) (   | (    \/| )   ( |
-| (____)|| (___) || |      |  (_/ / | (__       | |   | (__    | |   | |
-|  _____)|  ___  || |      |   _ (  |  __)      | |   |  __)   | |   | |
-| (      | (   ) || |      |  ( \ \ | (         | |   | (      | |   | |
-| )      | )   ( || (____/\|  /  \ \| (____/\   | |   | )      | (___) |
-|/       |/     \|(_______/|_/    \/(_______/   )_(   |/       (_______)
- ____________________________              ____________________________
-(                            )            (                            )
-| 01000001 00101101 01001000 )( )( )( )( )( 00101101 01000001 00100001 |
-|                            )( )( )( )( )(                            |
-(____________________________)            (____________________________)
-                               PacketFu
-             a mid-level packet manipulation library for ruby
+ _______  _______  _______  _        _______ _________ _______           ______
+(  ____ )(  ___  )(  ____ \| \    /\(  ____ \\__   __/(  ____ \|\     /|(  ____)
+| (    )|| (   ) || (    \/|  \  / /| (    \/   ) (   | (    \/| )   ( || (
+| (____)|| (___) || |      |  (_/ / | (__       | |   | (__    | |   | || (____
+|  _____)|  ___  || |      |   _ (  |  __)      | |   |  __)   | |   | || (__  |
+| (      | (   ) || |      |  ( \ \ | (         | |   | (      | |   | || (  ) |
+| )      | )   ( || (____/\|  /  \ \| (____/\   | |   | )      | (___) || (__) |
+|/       |/     \|(_______/|_/    \/(_______/   )_(   |/       (_______)(______)
+ ________________________________              ________________________________
+(                                )            (                                )
+|   01000001 00101101 01001000   )( )( )( )( )(   00101101 01000001 00100001   |
+|                                )( )( )( )( )(                                |
+(________________________________)            (________________________________)
+                                   PacketFu6
+                a mid-level packet manipulation library for ruby
 
->>> PacketFu Shell 1.1.12.
+>>> PacketFu6 Shell 1.1.12.
 >>> Use $packetfu_default.config for salient networking details.
 IP:  192.168.0.100   Mac: ac:bc:32:85:47:3f   Gateway: ec:08:6b:62:bc:d2
 Net: 192.168.0.0                              Iface:   en0
@@ -103,7 +106,7 @@ Here's an example of creating a TCPPacket and sending it out on the wire:
 
 ## Documentation
 
-PacketFu is yard-compatible (as well as sdoc/rdoc, if you prefer). You
+PacketFu6 is yard-compatible (as well as sdoc/rdoc, if you prefer). You
 can generate local documentation easily with either `yard doc .` or
 `sdoc`, and view doc/index.html with your favored browser. Once that's
 done, navigate at the top, and read up on how to create a Packet or
@@ -117,11 +120,13 @@ This project is integrated with travis-ci and is regularly tested to work with t
 - 2.2.3
 - 2.3.0
 
-To checkout the current build status for these rubies, click [here](https://travis-ci.org/packetfu/packetfu).
+To checkout the current build status for these rubies, click [here](https://travis-ci.org/decrypto-org/packetfu6).
 
 ## Author
 
-PacketFu is maintained primarily by Tod Beardsley todb@packetfu.com and
-Jonathan Claudius claudijd@yahoo.com, with help from Open Source Land.
+PacketFu6 is maintained primarily by Dimitris Grigoriou dimitris.riou@gmail.com
+with help from [Decrypto](https://github.com/decrypto-org).
+The initial authors os PacketFu are Tod Beardsley todb@packetfu.com and Jonathan
+Claudius claudijd@yahoo.com.
 
-See [LICENSE](https://github.com/packetfu/packetfu/blob/master/LICENSE.txt) for licensing details.
+See [LICENSE](https://github.com/decrypto-org/packetfu6/blob/master/LICENSE.txt) for licensing details.
