@@ -60,7 +60,7 @@ Net: 192.168.0.0                              Iface:   en0
 2.3.0 :001 >
 ```
 
-Once you're a this point, you're in an IRB (aka: [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop)) interface when you can start creating and injection packets with PacketFu.
+Once you're at this point, you're in an IRB (aka:[REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop)) interface when you can start creating and injection packets with PacketFu6.
 
 Here's an example of creating a TCPPacket and sending it out on the wire:
 
@@ -126,7 +126,7 @@ To checkout the current build status for these rubies, click [here](https://trav
 
 PacketFu6 is maintained primarily by Dimitris Grigoriou dimitris.riou@gmail.com
 with help from [Decrypto](https://github.com/decrypto-org).
-The initial authors os PacketFu are Tod Beardsley todb@packetfu.com and Jonathan
+The initial authors of PacketFu are Tod Beardsley todb@packetfu.com and Jonathan
 Claudius claudijd@yahoo.com.
 
 See [LICENSE](https://github.com/decrypto-org/packetfu6/blob/master/LICENSE.txt) for licensing details.
