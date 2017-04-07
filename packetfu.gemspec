@@ -2,14 +2,14 @@ require 'rake'
 require './lib/packetfu/version'
 
 Gem::Specification.new do |s|
-  s.name        = 'packetfu'
+  s.name        = 'packetfu6'
   s.version     = PacketFu::VERSION
-  s.authors     = ['Tod Beardsley', 'Jonathan Claudius']
-  s.email       = ['todb@packetfu.com', 'claudijd@yahoo.com']
-  s.summary     = 'PacketFu is a mid-level packet manipulation library.'
-  s.homepage    = 'https://github.com/packetfu/packetfu'
+  s.authors     = ['Dimitris Grigoriou','Tod Beardsley', 'Jonathan Claudius']
+  s.email       = ['dimitris.riou@gmail.com', 'todb@packetfu.com', 'claudijd@yahoo.com']
+  s.summary     = 'PacketFu6 is a mid-level packet manipulation library.'
+  s.homepage    = 'https://github.com/decrypto-org/packetfu6'
   s.description = %q{
-    PacketFu is a mid-level packet manipulation library for Ruby. With
+    PacketFu6 is a mid-level packet manipulation library for Ruby. With
     it, users can read, parse, and write network packets with the level of
     ease and fun they expect from Ruby.
   }
@@ -28,12 +28,5 @@ Gem::Specification.new do |s|
   s.extra_rdoc_files  = %w[.document README.md]
   s.test_files        = (s.files & (Dir['spec/**/*_spec.rb'] + Dir['test/test_*.rb']) )
   s.rubyforge_project = 'packetfu'
-
-  cert = File.expand_path("~/.ssh/gem-private_key_todb.pem")
-
-  if File.exist?(cert) and File.readable?(cert)
-    s.signing_key = cert
-    s.cert_chain = ['gem-public_cert.pem']
-  end
 
 end
